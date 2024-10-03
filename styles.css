@@ -1,0 +1,120 @@
+/* Root Variables for Color Palette */
+:root {
+    --font-heading: 'Bebas Neue', sans-serif;
+    --font-body: 'KOMIKA Axis', sans-serif;
+    --color-primary: #0B3D91;  /* Heroic Blue */
+    --color-secondary: #FF1E00; /* Heroic Red */
+    --color-accent: #FFDD00;    /* Heroic Yellow */
+    --color-text: #FFFFFF;      /* Pure White */
+    --color-background: #1C1C1C; /* Deep Charcoal */
+    --color-button-hover: #ED1D24; /* Vibrant Red */
+}
+
+/* Global Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    background: var(--color-background);
+    color: var(--color-text);
+}
+
+/* Background Image */
+.background {
+    background-image: url('4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Logo Styling */
+.main-logo {
+    width: 200px;
+    height: 200px;
+}
+
+/* CURATOR Text Styling */
+.curator-text {
+    font-family: var(--font-heading);
+    font-size: 100px;
+    margin-top: 50px;
+    color: var(--color-primary);
+}
+
+/* Buttons Section */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* Button Styling */
+.btn-primary, .btn-secondary {
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+
+/* Button Colors */
+.btn-primary {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-button-hover);
+}
+
+.btn-secondary {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* Image with Text Overlay */
+.image-container {
+    position: relative;
+    margin-top: 100px;
+}
+
+.info-image {
+    width: 200px;
+    height: 100px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: var(--font-heading);
+    color: var(--color-text);
+}
+
+/* Below Image Styling */
+.below-image {
+    width: 150px;
+    height: 100px;
+    margin-top: 20px;  /* Positioned 20px below the image with text overlay */
+  }
